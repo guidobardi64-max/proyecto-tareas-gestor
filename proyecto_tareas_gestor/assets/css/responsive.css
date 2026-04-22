@@ -1,0 +1,170 @@
+/* ============================================
+   TASKFLOW — responsive.css
+   3 Breakpoints: tablet, móvil, móvil pequeño
+   ============================================ */
+
+/* ── TABLET: ≤ 1024px ── */
+@media (max-width: 1024px) {
+
+  .header-inner {
+    padding: 0 var(--espacio-md);
+  }
+
+  .kanban-board {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--espacio-sm);
+  }
+
+  .seccion-tablero {
+    padding: 0 var(--espacio-md);
+  }
+
+  .seccion-formulario {
+    max-width: 560px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espacio-lg);
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── MÓVIL: ≤ 768px ── */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header-inner {
+    gap: var(--espacio-sm);
+    flex-wrap: wrap;
+    height: auto;
+    padding: 12px var(--espacio-sm);
+  }
+
+  .nav-links {
+    display: none; /* Ocultar nav en móvil */
+  }
+
+  .header-badge {
+    margin-left: auto;
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
+
+  /* Formulario */
+  .seccion-formulario {
+    margin: var(--espacio-lg) auto;
+    padding: 0 var(--espacio-sm);
+  }
+
+  .formulario-wrapper {
+    padding: var(--espacio-lg);
+    border-radius: var(--borde-radio);
+  }
+
+  .formulario-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .campos-fila {
+    grid-template-columns: 1fr;
+  }
+
+  /* Tablero: columnas apiladas verticalmente */
+  .seccion-tablero {
+    padding: 0 var(--espacio-sm);
+    margin-bottom: var(--espacio-lg);
+  }
+
+  .kanban-board {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-sm);
+  }
+
+  .tablero-header h2 {
+    font-size: 1.4rem;
+  }
+
+  /* Tarjetas */
+  .tarjeta-acciones {
+    flex-wrap: wrap;
+  }
+
+  .btn-accion {
+    font-size: 0.72rem;
+    padding: 5px 8px;
+  }
+
+  /* Footer */
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: var(--espacio-md);
+  }
+
+  .site-footer {
+    padding: var(--espacio-lg) var(--espacio-sm);
+  }
+}
+
+/* ── MÓVIL PEQUEÑO: ≤ 480px ── */
+@media (max-width: 480px) {
+
+  :root {
+    --tamano-base: 14px;
+  }
+
+  .logo-text {
+    font-size: 1.2rem;
+  }
+
+  .logo-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .formulario-header h2,
+  .tablero-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .formulario-wrapper {
+    padding: var(--espacio-md);
+  }
+
+  .campo-grupo input,
+  .campo-grupo textarea,
+  .campo-grupo select {
+    padding: 10px 12px;
+    font-size: 0.88rem;
+  }
+
+  .btn-agregar {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .tarjeta {
+    padding: var(--espacio-xs) var(--espacio-sm);
+  }
+
+  .tarjeta-titulo {
+    font-size: 0.88rem;
+  }
+
+  .tarjeta-descripcion {
+    font-size: 0.78rem;
+  }
+
+  .btn-accion,
+  .btn-eliminar {
+    font-size: 0.68rem;
+    padding: 4px 7px;
+  }
+
+  .footer-contacto li {
+    font-size: 0.8rem;
+  }
+}
