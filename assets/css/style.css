@@ -37,9 +37,8 @@
   --sombra-lg:  0 20px 48px rgba(0,0,0,.15);
 
   /* Tipografía */
-  --fuente-display:    'DM Serif Display', Georgia, serif;
-  --fuente-principal:  'DM Sans', system-ui, sans-serif;
-  --tamano-base:       16px;
+ --fuente-principal: 'Segoe UI', system-ui, sans-serif;  
+ --tamano-base: 16px;  
 
   /* Espaciado */
   --espacio-xs:  0.5rem;
